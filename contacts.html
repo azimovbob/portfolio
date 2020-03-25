@@ -4,20 +4,63 @@
         <title>Contacts</title>
     </head>
     <body>
-        <h1>Contacts</h1>
+        <header>
+            <h1>Contact Me</h1>
+        </header>
         <hr />
-        <table style="width:100%">
-            <tr>
-                <th><a href="projects.html" color="White">Projects</a></th>
-                <th><a href="contacts.html">Contacts</a></th>
-                <th><a href="testimonials.html">Testimonials</a></th>
-            </tr>
-        </table>
+        <nav>
+            <table width="40%">
+                <tr>
+                    <th><a href="index.html" target="_self"><img src="assets/home-icon.png" width="20em"></a></th>
+                    <th><a href="projects.html" color="White">Projects</a></th>
+                    <th><a href="contacts.html">Contacts</a></th>
+                    <th><a href="testimonials.html">Testimonials</a></th>
+                </tr>
+             </table>
+        </nav>
         <hr/>
-        <h2>Contacts Info</h2>
-        <br>
-        <p>Call M-F 10:00 - 05:00</p>
-        <p>Phone: 347-841-4020</p>
-        <p>Email: azimovbob@gmail.com</p>
+        <h2>Information Request</h2>
+        <form action="" method="POST">
+            <label for="firstName">First Name:</label> <br>
+            <input type="text" id="firstname" required> <br>
+            <label for="lastname">Last Name:</label> <br>
+            <input type="text" id="lastname"> <br>
+            <label for="email">First Name:</label> <br>
+            <input type="email" id="email"> <br><br>
+            <label for="bestTimeToCall">Best time to call:</label> <br>
+            <select id="bestTimeToCall">
+                <option value="default">-Select option-</option>
+                <option value="monday">Monday(08:00am to 12:00pm)</option>
+                <option value="tuesday">Tuesday(08:00am to 12:00pm)</option>
+                <option value="Wednesday">Wednesday(08:00am to 12:00pm)</option>
+                <option value="Thursday">Thursday(08:00am to 12:00pm)</option>
+            </select>
+            <br><br>
+            <fieldset>
+                <legend>I am interested on (check that apply)</legend><br>
+                <input type="checkbox" id="frondEnd" >
+                <label for=frontEnd>Frontend Developer</label>
+                <br>
+                <input type="checkbox" id="backEnd">
+                <label for=backEnd>Backend Developer</label>
+                <br>
+                <input type="checkbox" id="fullstack">
+                <lable for="fullstack">Fullstack developer</lable>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>I have filled in the client quesionnaire</legend><br>
+                <input type="radio" id="yes">
+                <label for="yes">YES</label>
+                <br>
+                <input type="radio" id="no">
+                <label for="no">NO</label>
+            </fieldset>
+            <br>
+            <label for="comments">Additional Information</label><br>
+            <textarea id="comments" name="comments"></textarea>
+            <br>
+            <input type="submit" name="submit" value="SUBMIT">
+        </form>
     </body>
 </html>
